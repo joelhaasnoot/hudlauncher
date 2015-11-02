@@ -4,7 +4,9 @@
 This code is a bit of an experiment to create an Android launcher that doubles as a home control unit.
 There's quite a few old Nexus 7 devices and/or Amazon Fire devices out there that this might work well with.
 For now it's not complete: this was a 48 hour sprint to get the basics working. Lots of work is still needed to be able to configure this.
-Especially the dashboard for now is just a UI mockup.
+Especially the dashboard is just a UI mockup for now.
+
+![screenshot](http://i.imgur.com/ib3UBRs.png)
 
 ## Future 
 I have plans on adding integrations for:
