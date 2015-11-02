@@ -1,7 +1,7 @@
 # HUDLauncher
 
 ## Intro
-This code is a bit on an experiment to create an Android launcher that doubles as a home control unit.
+This code is a bit of an experiment to create an Android launcher that doubles as a home control unit.
 There's quite a few old Nexus 7 devices and/or Amazon Fire devices out there that this might work well with.
 For now it's not complete: this was a 48 hour sprint to get the basics working. Lots of work is still needed to be able to configure this.
 Especially the dashboard for now is just a UI mockup.
@@ -19,7 +19,7 @@ If you have any great ideas, please open them as an issue.
 ## License
 
     HUDLaucher - a simple Android Launcher
-    Copyright (C) 2015  Joel Haasnoot - joelhaasnoot@gmail.com
+    Copyright (C) 2015  Joel Haasnoot - joelhaasnoot -AT- gmail.com
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published by
