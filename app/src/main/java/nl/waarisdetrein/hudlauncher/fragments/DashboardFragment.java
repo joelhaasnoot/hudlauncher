@@ -1,4 +1,4 @@
-package nl.waarisdetrein.hudlauncher;
+package nl.waarisdetrein.hudlauncher.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,11 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class HomeFragment extends Fragment {
+import nl.waarisdetrein.hudlauncher.R;
+
+public class DashboardFragment extends Fragment {
 
     private RecyclerView mNotificationList;
 
-    public HomeFragment() {
+    public DashboardFragment() {
         // Required empty public constructor
     }
 

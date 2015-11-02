@@ -5,7 +5,7 @@
     android:fitsSystemWindows="true"
     android:elevation="0dp"
     android:padding="8dp"
-    tools:context="nl.waarisdetrein.hudlauncher.AppsFragment">
+    tools:context=".fragments.AppsFragment">
         <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">

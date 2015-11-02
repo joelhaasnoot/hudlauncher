@@ -6,27 +6,17 @@ import android.app.FragmentTransaction;
 import android.app.WallpaperManager;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.graphics.Point;
 import android.os.Build;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.Display;
-import android.view.View;
-import android.webkit.WebViewFragment;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import java.util.ArrayList;
-
-import nl.waarisdetrein.hudlauncher.apps.AppsAdapter;
-import nl.waarisdetrein.hudlauncher.apps.AppsLoader;
-import nl.waarisdetrein.hudlauncher.model.AppModel;
+import nl.waarisdetrein.hudlauncher.fragments.AppsFragment;
+import nl.waarisdetrein.hudlauncher.fragments.DashboardFragment;
+import nl.waarisdetrein.hudlauncher.fragments.SettingsFragment;
+import nl.waarisdetrein.hudlauncher.fragments.WebFragment;
 
 public class HomeActivity extends AppCompatActivity implements ToolbarAdapter.OnToolbarItemClickListener {
 
@@ -56,7 +46,7 @@ public class HomeActivity extends AppCompatActivity implements ToolbarAdapter.On
 
         FragmentManager fm = getFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
-        transaction.add(R.id.fragment_main, new HomeFragment());
+        transaction.add(R.id.fragment_main, new DashboardFragment());
         transaction.commit();
 
     }
@@ -65,7 +55,7 @@ public class HomeActivity extends AppCompatActivity implements ToolbarAdapter.On
     public void onToolbarItemClicked(int position) {
         switch(position) {
             case 0:
-                replaceFragment(new HomeFragment());
+                replaceFragment(new DashboardFragment());
                 break;
             case 1:
                 replaceFragment(new AppsFragment());

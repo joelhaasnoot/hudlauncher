@@ -1,4 +1,4 @@
-package nl.waarisdetrein.hudlauncher;
+package nl.waarisdetrein.hudlauncher.fragments;
 
 import android.app.Fragment;
 import android.graphics.Point;
@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import nl.waarisdetrein.hudlauncher.R;
 import nl.waarisdetrein.hudlauncher.apps.AppsAdapter;
 import nl.waarisdetrein.hudlauncher.apps.AppsLoader;
 import nl.waarisdetrein.hudlauncher.model.AppModel;

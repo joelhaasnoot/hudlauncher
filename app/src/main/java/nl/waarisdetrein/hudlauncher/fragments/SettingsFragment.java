@@ -1,7 +1,9 @@
-package nl.waarisdetrein.hudlauncher;
+package nl.waarisdetrein.hudlauncher.fragments;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
+
+import nl.waarisdetrein.hudlauncher.R;
 
 public class SettingsFragment extends PreferenceFragment {
 
