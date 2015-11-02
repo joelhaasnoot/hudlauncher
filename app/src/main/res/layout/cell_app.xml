@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+    <ImageView android:id="@+id/icon_app"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/label_app_name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:gravity="center"/>
+    <!--style="@style/ShadowText"-->
+</LinearLayout>

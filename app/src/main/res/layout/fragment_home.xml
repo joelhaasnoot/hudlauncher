@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="nl.waarisdetrein.hudlauncher.HomeFragment">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_apps"
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            app:layout_widthPercent="48%">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:drawableStart="@drawable/ic_android_def"
+                android:drawableLeft="@drawable/ic_android_def"
+                android:drawablePadding="6dp"
+                android:textColor="@color/colorAccent"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="Apps" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_switches"
+            android:layout_below="@id/card_apps"
+            android:layout_gravity="top"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            app:layout_widthPercent="48%"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="Switches" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="8dp"
+                        android:background="@color/colorAccent"
+                        android:drawableTop="@drawable/ic_scene_lg"
+                        android:drawableTint="@color/white"
+                        android:textColor="@color/white"
+                        android:text="Upstairs"/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="8dp"
+                        android:background="@color/colorAccent"
+                        android:drawableTop="@drawable/ic_scene_lg"
+                        android:drawableTint="@color/white"
+                        android:textColor="@color/white"
+                        android:text="Watch TV"/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="8dp"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_power_lg"
+                        android:drawableTint="@color/white"
+                        android:textColor="@color/colorAccent"
+                        android:text="TV"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_weather"
+            android:layout_toRightOf="@id/card_apps"
+            android:layout_margin="8dp"
+            app:layout_widthPercent="48%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_column="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/title_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_sun_def"
+                    android:drawableLeft="@drawable/ic_sun_def"
+                    android:drawablePadding="6dp"
+                    android:textColor="@color/orange"
+                    android:padding="8dp"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:text="Weather" />
+                <ImageView
+                    android:id="@+id/icon_weather"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:paddingBottom="8dp"
+                    android:layout_below="@id/title_weather"
+                    android:src="@drawable/ic_weather_sun"
+                    android:tint="@color/orange"/>
+                <TextView
+                    android:layout_below="@id/title_weather"
+                    android:layout_toRightOf="@id/icon_weather"
+                    android:layout_alignBaseline="@id/icon_weather"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:textSize="40dp"
+                    android:textColor="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:text="Clear, 15° C"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_notifications"
+            android:layout_toRightOf="@id/card_apps"
+            android:layout_below="@id/card_weather"
+            android:layout_margin="8dp"
+            app:layout_widthPercent="48%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_column="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_notifications_def"
+                android:drawableLeft="@drawable/ic_notifications_def"
+                android:drawablePadding="6dp"
+                android:textColor="@color/green"
+                android:padding="8dp"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="Notifications" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="8dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.percent.PercentRelativeLayout>
+</ScrollView>

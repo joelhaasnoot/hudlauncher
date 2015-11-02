@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="nl.waarisdetrein.hudlauncher.HomeActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_toolbar"
+        android:layout_width="68dp"
+        android:layout_height="match_parent"
+        android:paddingTop="36dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="32dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/fragment_main">
+
+    </FrameLayout>
+
+</LinearLayout>

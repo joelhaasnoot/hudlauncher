@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HUDLauncher</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_app_context">Actions</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_background_show">Use wallpaper as background</string>
+    <string name="pref_background_show_summ">Use the system selected wallpaper as background throughout the app</string>
+</resources>
